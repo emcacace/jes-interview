@@ -1,0 +1,152 @@
+@import "./variables";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-spacers: (
+  10: $spacer * 6
+);
+
+// Merge the maps
+$spacers: map-merge($spacers, $custom-spacers);
+
+// Option All of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Custom
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  color: $secondary;
+  margin: 0;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+  font-family: Metropolis;
+  color: $headings-color;
+}
+
+h1 {
+  margin-bottom: 3rem;
+
+  &::after {
+    display: block;
+    content: "";
+    background: $primary;
+    width: 15rem;
+    height: .4rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.topbar {
+  background: $primary;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+header {
+  .navbar {
+    border-top: 1px solid #E7E8E9;
+    box-shadow: 0px 2px 3px #00000029;
+
+    .nav-link {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      
+      &.active {
+        border-bottom: solid $primary 3px;
+      }
+    }
+  } 
+}
+
+.hero {
+  background-image: url("images/background@2x.png");
+  background-size: cover;
+  background-position: bottom center;
+  margin-bottom: 5rem;
+}
+
+.feature-with-text {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3.25rem;
+  }
+
+  img {
+    margin-bottom: 1.5rem;
+  }
+
+  div {
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    font-family: Metropolis;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+}
+
+.sidebar {
+  border-right: 1px solid #E7E8E9;
+  margin-left: 2rem;
+
+  ul li, a {
+    font-family: Metropolis;
+    font-weight: 400;
+  }
+
+  &__nav {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+}
+
+.call-to-action {
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  overflow: hidden;
+
+  .thumb {
+    width: 130px;
+    height: 115px;
+    background-size: cover;
+    background-position: center center;
+
+    &--redes {
+      background-image: url("images/4.- Redes de derivacion.png");
+    }
+
+    &--autoridades {
+      background-image: url("images/5.- Autoridades indigenas.png");
+    }
+  }
+
+  .arrow {
+    background: $primary;
+  }
+
+  h6 {
+    color: $primary;
+  }
+}
+
+footer {
+  background: #F0F2F7;
+
+  .sponsor img{
+    max-height: 40px;
+  }
+}

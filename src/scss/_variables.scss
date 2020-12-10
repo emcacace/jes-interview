@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Metropolis;
+  font-weight: 700;
+  src: url("font/Metropolis-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Metropolis;
+  font-weight: 600;
+  src: url("font/Metropolis-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Metropolis;
+  font-weight: 400;
+  src: url("font/Metropolis-Medium.otf") format("opentype");
+}
+
+$primary: #4FA49D;
+$secondary: #606163;
+$headings-color: #052567;
+
+
+$navbar-light-active-color: $primary;
+$nav-pills-link-active-color: $primary;
+$nav-pills-link-active-bg: #F0F2F7;
+$nav-link-color: $secondary;
+
+$link-decoration: none;      

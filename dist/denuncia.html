@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site CSS -->
+    <link href="theme_site.css" rel="stylesheet" />
+
+    <title>Denuncia</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <div class="topbar p-1">
+        <div class="d-flex flex-nowrap justify-content-end align-items-center">
+          <a class="link-secondary" href="#">Espanol</a>
+          <a class="link-secondary" href="#" aria-label="Search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="mx-3"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <title>Search</title>
+              <circle cx="10.5" cy="10.5" r="7.5"></circle>
+              <path d="M21 21l-5.2-5.2"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img src="images/ayuda-logo.png" alt="" width="260" />
+        </a>
+      </div>
+      <nav class="navbar p-0 navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-evenly w-100">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="cuales-son-mis-opciones.html"
+                >¿Cuales son mis opciones?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">¿Soy victima del delito? </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">¿Cómo apoyar a otros?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">¿Eres menor de edad?</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row m-5">
+        <div class="col-lg-4 col-md-8 sidebar">
+          <a class="sidebar__nav" href="cuales-son-mis-opciones.html">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-arrow-left-circle"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+              />
+            </svg>
+            ¿Qué opciones tengo?
+          </a>
+          <ul class="nav nav-pills flex-column mt-5" id="myTab" role="tablist">
+            <li class="nav-item m-1" role="presentation">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                href="#como-denuncia"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >¿Cómo llevar a cabo una denuncia?</a
+              >
+            </li>
+            <li class="nav-item m-1" role="presentation">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                href="#realizar-denuncia"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >¿Dónde puedo realizar una denuncia?</a
+              >
+            </li>
+            <li class="nav-item m-1" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                href="#datos"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >¿Qué datos debo presentar?</a
+              >
+            </li>
+            <li class="nav-item m-1" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                href="#proceso"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >¿En qué consiste el proceso penal?</a
+              >
+            </li>
+            <li class="nav-item m-1" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                href="#derechos"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >¿Cuáles son mis derechos como víctima?</a
+              >
+            </li>
+          </ul>
+
+          <h5 class="m-3">¿Buscas ayuda?</h5>
+          <div class="call-to-action d-flex align-items-center m-3">
+            <div class="thumb thumb--redes"></div>
+            <div class="ms-2 flex-grow-1">
+              <h6>Atención en Redes de Derivación</h6>
+            </div>
+            <div class="arrow align-self-stretch p-2 d-flex align-items-center">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-right-fill text-white"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="call-to-action d-flex align-items-center m-3">
+            <div class="thumb thumb--autoridades"></div>
+            <div class="ms-2 flex-grow-1">
+              <h6>Atención en Comunidades Rurales</h6>
+            </div>
+            <div class="arrow align-self-stretch p-2 d-flex align-items-center">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-right-fill text-white"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 cold-md-12 tab-content p-5" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="como-denuncia"
+            role="tabpanel"
+            aria-labelledby="como-denuncia-tab"
+          >
+            <h1>¿Cómo llevar a cabo una denuncia?</h1>
+            <p>
+              Comprender algunos aspectos claves del proceso de poner una
+              denuncia (hyperlink glosario) puede ayudar a las personas víctimas
+              a sentirse más preparadas.
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/F_h_sIypfNk"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="realizar-denuncia"
+            role="tabpanel"
+            aria-labelledby="realizar-denuncia-tab"
+          >
+            <h1>¿Dónde puedo realizar una denuncia?</h1>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <img
+                  class="img-fluid"
+                  src="images/donde-denuncia.png"
+                  alt="donde-denuncia"
+                />
+              </div>
+              <idv class="col-lg-6 col-md-12">
+                <p>
+                  Si fuiste víctima o testigo de un delito, puedes presentar una
+                  denuncia de manera segura y confidencial ante las siguientes
+                  instituciones:
+                </p>
+                <ul>
+                  Ministerio Público
+                  <li>
+                    Centro de llamadas 24 horas 365 días Contra la extorsión
+                    1574
+                  </li>
+                  <li>
+                    Denuncias en línea para reportar el robo de tu celular,
+                    documentos personales o automóvil.
+                  </li>
+                  <li>Oficina de Atención Permanente.</li>
+                  <li>Oficina de Atención a la Víctima.</li>
+                  <li>Fiscalías de Distrito, Municipales y Especializadas.</li>
+                  <li>
+                    Fiscalías instaladas en hospitales del Ministerio de Salud
+                    Pública y Asistencia Social.
+                  </li>
+                </ul>
+
+                <ul>
+                  Policía Nacional Civil
+                  <li>Comisaría o estación local</li>
+                  <li>Oficina de Atención Ciudadana.</li>
+                </ul>
+
+                <ul>
+                  Organismo Judicial
+                  <li>Juzgados de Turno, de Paz o de Instancia</li>
+                  <li>Juzgados especializados por delito</li>
+                </ul>
+                <p>
+                  La cobertura del Sistema de Justicia no es universal. En este
+                  directorio se encuentra más información sobre las
+                  instituciones que brindan apoyo a víctimas del delito.
+                </p>
+              </idv>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="datos"
+            role="tabpanel"
+            aria-labelledby="datos-tab"
+          >
+            <h1>¿Qué datos debo presentar?</h1>
+            <ul>
+              <li>
+                De preferencia, llevar tu Documento Personal de Identificación
+                (DPI).
+              </li>
+              <li>
+                Datos del agresor, cómplices y testigos como el nombre,
+                características físicas, dirección o lugar de trabajo.
+              </li>
+              <li>El lugar y fecha en donde ocurrió el hecho.</li>
+              <li>¿Cómo te enteraste del hecho?</li>
+              <li>¿En qué consiste el hecho?</li>
+            </ul>
+            <p>
+              Tener esta información es de ayuda para presentar la denuncia,
+              pero si se desconoce alguno de estos puntos, esto no impedirá
+              poner la denuncia.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="proceso"
+            role="tabpanel"
+            aria-labelledby="proceso-tab"
+          >
+            <h1>¿En qué consiste el proceso penal?</h1>
+            <p>
+              El proceso penal incluye una amplia gama de actividades, desde la
+              denuncia e investigación de un posible delito hasta la
+              determinación legal de culpabilidad o inocencia.
+            </p>
+            <p>
+              Cada tipo de denuncia requiere procesos distintos y puede tener
+              consecuencias distintas tanto para la víctima como para el
+              agresor.
+            </p>
+            <iframe
+              class="mt-3 mb-3"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/doJ32zW-Egc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            <h4>1. Denuncia</h4>
+            <p>
+              Las denuncias presentadas en la Policía Nacional Civil y el
+              Organismo Judicial son trasladas al Ministerio Público.
+            </p>
+            <p>
+              El o la fiscal del Ministerio Público, aplica el Protocolo de
+              Atención Integral a Víctimas del Delito dependiendo de la
+              naturaleza del delito, escucha el relato sobre los hechos y
+              registra la información.
+            </p>
+            <h4>2. Investigación</h4>
+            <p>
+              El o la fiscal investiga los hechos a través de pruebas
+              científicas, declaraciones, testimoniales, revisión de cámaras,
+              entre otros. Tienes derecho a participar en esta investigación y
+              ser actualizado sobre los avances de la investigación.
+            </p>
+            <h4>3. Pruebas</h4>
+            <p>
+              El o la fiscal del MP presenta las investigaciones a la jueza o
+              juez. La jueza o juez puede ligar a proceso al agresor y dictar
+              prisión preventiva.
+            </p>
+            <h4>4. Debate</h4>
+            <p>
+              La jueza o juez envía el caso al Tribunal de Sentencia Penal
+              correspondiente, para realizar el debate oral y público.
+            </p>
+            <h4>5. Sentencia</h4>
+            <p>
+              Las juezas o jueces determinan la culpabilidad o inocencia del
+              agresor y dictan la sentencia correspondiente. Si hay una
+              sentencia condenatoria, el agresor tiene 3 días para apelar la
+              decisión. Si pasan estos 3 días, y no hay una apelación, se
+              considera que la sentencia está firme.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="derechos"
+            role="tabpanel"
+            aria-labelledby="derechos-tab"
+          >
+            <h1>¿Cuáles son mis derechos como víctima?</h1>
+            <p>
+              Durante todo el proceso penal (link glosario) el denunciante tiene
+              derecho a:
+            </p>
+            <h4>Atención integral</h4>
+            <p>
+              Recibir atención integral desde el inicio de la denuncia hasta
+              finalizar el proceso penal. Esto significa asistencia legal,
+              médica y psicológica. Todas las sedes del Ministerio Público deben
+              proporcionar atención integral a víctimas. Si en alguna oficina
+              del Ministerio Público no hay atención psicológica o de trabajador
+              o trabajadora social, se coordina con las Redes de Derivación o
+              Ministerio de Salud para que la víctima pueda obtener esta
+              atención.
+            </p>
+            <h4>Devolución</h4>
+            <p>
+              Devolución de los objetos que no formen parte de la investigación.
+            </p>
+            <h4>Información</h4>
+            <p>
+              Información sobre sus derechos; avances de la investigación, las
+              decisiones tomadas por el Ministerio Público y las resoluciones de
+              los órganos judiciales.
+            </p>
+            <h4>Colaborar</h4>
+            <p>
+              Colaborar con el Ministerio Público y la Policía Nacional Civil en
+              el proceso de investigación, dando sugerencias de dónde recabar
+              pruebas y facilitando documentos, números telefónicos, u otros
+              objetos pertinentes.
+            </p>
+            <h4>Ser escuchado/a</h4>
+            <p>
+              Ser escuchado o escuchada con atención, sin interrupciones y en su
+              propio idioma.
+            </p>
+            <h4>No ser expuesto/a ante el agresor</h4>
+            <p>
+              No ser expuesto o expuesta ante el agresor, en especial cuando se
+              trate de niñas, niños y adolescentes víctimas, a fin de cuidar su
+              bienestar emocional.
+            </p>
+            <h4>Igualdad</h4>
+            <p>
+              A ser atendido o atendida con igualdad y sin discriminación por
+              ninguna razón.
+            </p>
+            <h4>Respeto</h4>
+            <p>Recibir atención con respeto y de manera inmediata.</p>
+            <h4>Confidencialidad</h4>
+            <p>
+              La confidencialidad. Que se mantenga en reserva sus datos
+              personales, los que no serán proporcionados a personas ajenas al
+              proceso.
+            </p>
+            <h4>Comunicación</h4>
+            <p>
+              A la comunicación constante con el personal del Ministerio Público
+              que tenga a su cargo la investigación del caso.
+            </p>
+            <h4>Protección</h4>
+            <p>
+              A recibir protección cuando la integridad física esté en peligro
+              como consecuencia de la persecución penal en contra del agresor.
+            </p>
+            <h4>Querellante adhesivo</h4>
+            <p>
+              Constituirse como querellante adhesivo lo cual significa que puede
+              intervenir y participar en el proceso penal.
+            </p>
+            <p>
+              En el caso que no se esté respetando tus derechos, sobre todo tu
+              derecho a estar informado sobre los avances en tu caso, debes
+              solicitar hablar con el supervisor del fiscal asignado a tu caso o
+              acudir a la Procuraduría de los Derechos Humanos para que puedan
+              hacerle seguimiento al proceso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-5">
+      <h4 class="text-center">Con el apoyo de</h4>
+      <div class="d-flex mt-5 justify-content-center">
+        <div class="sponsor">
+          <img
+            src="images/sponsor-canada.png"
+            alt="canada logo"
+            class="img-fluid"
+          />
+        </div>
+        <div class="sponsor ms-3">
+          <img src="images/sponsor-mp.png" alt="mp logo" class="img-fluid" />
+        </div>
+        <div class="sponsor ms-3">
+          <img
+            src="images/sponsor-fundacion.png"
+            alt="fundacion logo"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
